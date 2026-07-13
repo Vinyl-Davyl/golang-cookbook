@@ -2,7 +2,7 @@
 
 A **personal, well-documented Go reference** written entirely in Go. Every topic is a runnable recipe with godoc comments, external references to official docs and books, and a CLI to browse and execute examples.
 
-> Inspired by *The Go Programming Language* (Donovan & Kernighan), *Effective Go*, the [Go Tour](https://go.dev/tour/), and modern idioms from the Go 1.21–1.23 releases (`slog`, improved `net/http` routing, `slices`, generics).
+> Inspired by _The Go Programming Language_ (Donovan & Kernighan), _Effective Go_, the [Go Tour](https://go.dev/tour/), and modern idioms from the Go 1.21–1.23 releases (`slog`, improved `net/http` routing, `slices`, generics).
 
 ## Requirements
 
@@ -34,124 +34,143 @@ go doc ./recipes/errors
 ## Recipe Index
 
 ### basics
-| ID | Title |
-|----|-------|
-| `basics-variables` | Variables, Types, and Zero Values |
-| `basics-control-flow` | Control Flow: if, for, switch, range |
-| `basics-defer-panic-recover` | defer, panic, and recover |
+
+| ID                           | Title                                |
+| ---------------------------- | ------------------------------------ |
+| `basics-variables`           | Variables, Types, and Zero Values    |
+| `basics-control-flow`        | Control Flow: if, for, switch, range |
+| `basics-defer-panic-recover` | defer, panic, and recover            |
 
 ### functions
-| ID | Title |
-|----|-------|
-| `functions-multiple-returns` | Multiple Return Values |
-| `functions-variadic` | Variadic Functions |
-| `functions-closures` | Closures and Function Values |
+
+| ID                           | Title                        |
+| ---------------------------- | ---------------------------- |
+| `functions-multiple-returns` | Multiple Return Values       |
+| `functions-variadic`         | Variadic Functions           |
+| `functions-closures`         | Closures and Function Values |
 
 ### structs
-| ID | Title |
-|----|-------|
-| `structs-embedding` | Struct Embedding (Composition) |
-| `structs-method-receivers` | Value vs Pointer Receivers |
+
+| ID                         | Title                          |
+| -------------------------- | ------------------------------ |
+| `structs-embedding`        | Struct Embedding (Composition) |
+| `structs-method-receivers` | Value vs Pointer Receivers     |
 
 ### pointers
-| ID | Title |
-|----|-------|
+
+| ID                     | Title                |
+| ---------------------- | -------------------- |
 | `pointers-when-to-use` | When to Use Pointers |
 
 ### errors
-| ID | Title |
-|----|-------|
-| `errors-wrap` | Wrapping Errors with Context |
-| `errors-is-as` | errors.Is and errors.As |
-| `errors-join` | Joining Multiple Errors |
-| `errors-sentinel` | Sentinel Errors |
-| `errors-custom-type` | Custom Error Types |
+
+| ID                   | Title                        |
+| -------------------- | ---------------------------- |
+| `errors-wrap`        | Wrapping Errors with Context |
+| `errors-is-as`       | errors.Is and errors.As      |
+| `errors-join`        | Joining Multiple Errors      |
+| `errors-sentinel`    | Sentinel Errors              |
+| `errors-custom-type` | Custom Error Types           |
 
 ### interfaces
-| ID | Title |
-|----|-------|
-| `interfaces-small` | Small, Focused Interfaces |
+
+| ID                           | Title                             |
+| ---------------------------- | --------------------------------- |
+| `interfaces-small`           | Small, Focused Interfaces         |
 | `interfaces-type-assertions` | Type Assertions and Type Switches |
-| `interfaces-accept-return` | Accept Interfaces, Return Structs |
+| `interfaces-accept-return`   | Accept Interfaces, Return Structs |
 
 ### slices
-| ID | Title |
-|----|-------|
+
+| ID                       | Title                        |
+| ------------------------ | ---------------------------- |
 | `slices-append-capacity` | Append, Length, and Capacity |
-| `slices-filter-map` | Filter and Map Patterns |
-| `maps-patterns` | Map Idioms |
+| `slices-filter-map`      | Filter and Map Patterns      |
+| `maps-patterns`          | Map Idioms                   |
 
 ### strings
-| ID | Title |
-|----|-------|
-| `strings-builder` | strings.Builder |
-| `strings-json` | JSON Marshal and Unmarshal |
+
+| ID                | Title                      |
+| ----------------- | -------------------------- |
+| `strings-builder` | strings.Builder            |
+| `strings-json`    | JSON Marshal and Unmarshal |
 
 ### io
-| ID | Title |
-|----|-------|
-| `io-read-write-file` | Reading and Writing Files |
+
+| ID                      | Title                               |
+| ----------------------- | ----------------------------------- |
+| `io-read-write-file`    | Reading and Writing Files           |
 | `io-json-encode-decode` | Streaming JSON with Encoder/Decoder |
 
 ### concurrency
-| ID | Title |
-|----|-------|
-| `concurrency-goroutines` | Goroutines |
-| `concurrency-channels` | Channels |
-| `concurrency-select` | select Statement |
-| `concurrency-semaphore` | Bounded Concurrency (Semaphore) |
-| `concurrency-producer-consumer` | Producer-Consumer Pattern |
-| `concurrency-errgroup` | errgroup for Concurrent Tasks |
+
+| ID                              | Title                           |
+| ------------------------------- | ------------------------------- |
+| `concurrency-goroutines`        | Goroutines                      |
+| `concurrency-channels`          | Channels                        |
+| `concurrency-select`            | select Statement                |
+| `concurrency-semaphore`         | Bounded Concurrency (Semaphore) |
+| `concurrency-producer-consumer` | Producer-Consumer Pattern       |
+| `concurrency-errgroup`          | errgroup for Concurrent Tasks   |
 
 ### context
-| ID | Title |
-|----|-------|
+
+| ID                       | Title                     |
+| ------------------------ | ------------------------- |
 | `context-timeout-cancel` | Timeouts and Cancellation |
-| `context-propagation` | Context Propagation |
+| `context-propagation`    | Context Propagation       |
 
 ### http
-| ID | Title |
-|----|-------|
+
+| ID                    | Title                             |
+| --------------------- | --------------------------------- |
 | `http-server-routing` | HTTP Server with Go 1.22+ Routing |
-| `http-client` | HTTP Client with Context |
-| `http-middleware` | HTTP Middleware Pattern |
+| `http-client`         | HTTP Client with Context          |
+| `http-middleware`     | HTTP Middleware Pattern           |
 
 ### testing
-| ID | Title |
-|----|-------|
-| `testing-table-driven` | Table-Driven Tests |
+
+| ID                          | Title                           |
+| --------------------------- | ------------------------------- |
+| `testing-table-driven`      | Table-Driven Tests              |
 | `testing-subtests-parallel` | Subtests and Parallel Execution |
 
 ### generics
-| ID | Title |
-|----|-------|
-| `generics-functions` | Generic Functions |
-| `generics-constraints` | Type Constraints |
+
+| ID                     | Title             |
+| ---------------------- | ----------------- |
+| `generics-functions`   | Generic Functions |
+| `generics-constraints` | Type Constraints  |
 
 ### logging
-| ID | Title |
-|----|-------|
+
+| ID             | Title                        |
+| -------------- | ---------------------------- |
 | `logging-slog` | Structured Logging with slog |
 
 ### sync
-| ID | Title |
-|----|-------|
-| `sync-mutex-waitgroup` | sync.Mutex and sync.WaitGroup |
-| `sync-once` | sync.Once for Lazy Initialization |
+
+| ID                     | Title                             |
+| ---------------------- | --------------------------------- |
+| `sync-mutex-waitgroup` | sync.Mutex and sync.WaitGroup     |
+| `sync-once`            | sync.Once for Lazy Initialization |
 
 ### time
-| ID | Title |
-|----|-------|
+
+| ID                    | Title              |
+| --------------------- | ------------------ |
 | `time-tickers-timers` | Timers and Tickers |
 
 ### project
-| ID | Title |
-|----|-------|
+
+| ID                      | Title                      |
+| ----------------------- | -------------------------- |
 | `project-module-layout` | Modules and Project Layout |
 
 ### embed
-| ID | Title |
-|----|-------|
+
+| ID            | Title                      |
+| ------------- | -------------------------- |
 | `embed-files` | Embedding Files with embed |
 
 ## Project Structure
@@ -177,17 +196,17 @@ golang-cookbook/
 4. **Follow references** — every recipe links to official Go docs and blog posts.
 5. **Browse godoc** — `go doc github.com/golang-cookbook/cookbook/recipes/errors`.
 
-## Core Principles (2025–2026 Idioms)
+## Core Principles
 
-| Principle | Recipe |
-|-----------|--------|
-| Errors are values, wrap with `%w` | `errors-wrap` |
-| Pass `context.Context` as first param | `context-propagation` |
-| Stdlib-first (`slog`, `net/http` routing) | `logging-slog`, `http-server-routing` |
-| Small interfaces at the consumer | `interfaces-small` |
-| Bounded concurrency over worker pools | `concurrency-semaphore`, `concurrency-errgroup` |
-| Table-driven tests | `testing-table-driven` |
-| Flat project layout, grow when needed | `project-module-layout` |
+| Principle                                 | Recipe                                          |
+| ----------------------------------------- | ----------------------------------------------- |
+| Errors are values, wrap with `%w`         | `errors-wrap`                                   |
+| Pass `context.Context` as first param     | `context-propagation`                           |
+| Stdlib-first (`slog`, `net/http` routing) | `logging-slog`, `http-server-routing`           |
+| Small interfaces at the consumer          | `interfaces-small`                              |
+| Bounded concurrency over worker pools     | `concurrency-semaphore`, `concurrency-errgroup` |
+| Table-driven tests                        | `testing-table-driven`                          |
+| Flat project layout, grow when needed     | `project-module-layout`                         |
 
 ## Recommended Books & Official Resources
 
